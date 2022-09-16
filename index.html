@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbbar-list">
+                        <li class="header__navbar-item header__navbar-qr--hover header__navbar-separate">
+                            Truy cập qua ứng dụng Fast & Furious fast 9
+                            <div class="header__qr">
+                                <img src="./assets/jpg/qr.png" alt="qr code" class="header__qr-img">
+                                <div class="header__qr-app">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/jpg/androidapp.png" alt="app google"
+                                            class="header__qr-dowload">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/jpg/appstore.png" alt="app store" class="header__qr-dowload">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item ">
+                            <span class="header__navbar-no-poiter">Kết nối</span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbbar-list">
+                        <li class="header__navbar-item header__navbar-item--hover" onmouseover="fshow()" onmouseout="fhide()">
+                            <a href="" class="header__navbar-link ">
+                                <i class="header__navbar-icon  fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <div class="header__notify-header">
+                                    <h3>Thông Báo Mới</h3>
+                                </div>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link header__notify-link--nocheck">
+                                            <img src="https://storage.googleapis.com/vinfast-data-01/VF8_1656325514.png"
+                                                alt="Xe điện VinFast VF8" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Mẫu VF8 eSUV cỡ trung thời thượng
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    VF 8 đạt đến sự kết hợp hoàn hoàn hảo giữa chất lượng và giá trị
+                                                    thông qua công nghệ cao cấp, kỹ thuật sản xuất đặc biệt và dịch vụ
+                                                    tận tâm.
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://storage.googleapis.com/vinfast-data-01/VF8_1656325514.png"
+                                                alt="Xe điện VinFast VF9" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">
+                                                    Mẫu VF9 eSUV cỡ lớn hạng sang
+                                                </span>
+                                                <span class="header__notify-description">
+                                                    VF 9 là mẫu xe SUV 7 chỗ hàng đầu của VinFast. Với kiểu dáng tinh
+                                                    tế, công nghệ tiên tiến nhất và sự tỉ mỉ trong từng chi tiết, VF
+                                                    9mang đến trải nghiệm đặc biệt cao cấp cho người sở hữu.
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="footer__notify">
+                                    <a href="" class="footer__notify-link">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-link">
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-separate js-open-login">
+                            Đăng nhập
+                        </li>
+                        <li class="header__navbar-item">
+                            Đăng ký
+                        </li>
+                    </ul>
+                </nav>
+                <!-- logo -->
+                <div class="header-with__search">
+                    <div class="header__logo">
+                        <img src="./assets/jpg/logo header.png" alt="logo" class="header__logo-img">
+                    </div>
+
+                    <!-- search -->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                        </div>
+                        <input type="text" class="header__search-input" placeholder="Bạn muốn tìm car nào">
+                        <button type="submit" class="header__search-btn">
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i> 
+                        </button>
+                    </div>
+                    <!-- store -->
+                    <div class="header__cart">
+                        <i class="header__cart-icon fa-solid fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="container">
+            <video [muted]="true" width="100%" height="80%" autoplay playsinline loop class="kkk">
+                <source src="./assets/video/VinFast-VF8-VF9-electric-SUV-cars.mp4" type="video/mp4">
+              </video>
+        </section>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal__overlay ">
+
+        </div>
+        <div class="modal__body">
+            <!-- register form-->
+            <div class="auth-form register">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heeading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn js-open-login">Đăng Nhập</span>
+                    </div>
+
+                    <form action="" class="auth-form__form" method="post">
+                        <section class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email của bạn" />
+                        </section>
+                        <section class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập số điện thoại của bạn" />
+                        </section>
+                        <section class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+                        </section>
+                        <section class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn" />
+                        </section>
+                        <section class="auth-form__checkbox">
+                            <input type="checkbox" name="checked" />
+                            <label for="checked" class="auth-form__checker-text"> Đăng ký và đông ý với
+                                <a href="" class="auth-form__link">điều khoản</a>
+                                của Gara
+                                <a href="" class="auth-form__link">Fast & Furious fast 9</a>
+                            </label>
+                        </section>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__back js-modal-close">TRỞ LẠI</button>
+                            <button class="btn btn-primary">ĐĂNG KÝ</button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="auth-form__socicals">
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Kết nối tới Facebook</p>
+                    </a>
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Kết nối tới Zalo</p>
+                    </a>
+                </div>
+            </div>
+            <!-- login form -->
+            <div class="auth-form login">
+                <div class="auth-form__container js-modal-container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heeading">Đăng Nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng Ký</span>
+                    </div>
+
+                    <form action="" class="auth-form__form" method="post">
+                        <section class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email của bạn" />
+                        </section>
+                        <section class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" />
+                        </section>
+                        <section class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forcos">Quên mật khẩu</a>
+                                <span class="auth-form__help-separate"></span>
+                                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                        </section>
+                        <div class="auth-form__controls">
+                            <button type="submit" class="btn auth-form__back js-modal-close">TRỞ LẠI</button>
+                            <button type="submit" class="btn btn-primary">ĐĂNG Nhập</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="auth-form__socicals">
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Kết nối tới Facebook</p>
+                    </a>
+                    <a href="" class="btn btn--with-icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Kết nối tới Zalo</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const modal = document.querySelector('.js-modal');
+        const openBtnLogins = document.querySelectorAll('.js-open-login');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const modalCloses = document.querySelectorAll('.js-modal-close');
+
+        function ham1() {
+            modal.classList.add('open');
+        }
+        function ham2() {
+            modal.classList.remove('open');
+        }
+        for (const openBtnLogin of openBtnLogins) {
+            openBtnLogin.addEventListener('click', ham1);
+        }
+        for (const modalClose of modalCloses) {
+            modalClose.addEventListener('click', ham2);
+        }
+
+        modal.addEventListener('click', ham2);
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation();
+        })
+    </script>
+    <script>
+        function fshow(){
+            var a= document.getElementsByClassName('header__notify');
+            a.style.display="block";
+        }
+        function fhide(){
+            var b= document.getElementsByClassName('header__notify');
+            b.style.display="none";
+        }
+    </script>
+</body>
+
+</html>

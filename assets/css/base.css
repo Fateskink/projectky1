@@ -1,0 +1,118 @@
+:root{
+    --white-color:white;
+    --black-color:black;
+    --text-color:#333;
+    --primit-color:#0077ef;
+    --border-color:#bdbdbd;
+    --help-color:#ec322c;
+    /* #4dc6f4 */
+
+    --header-height: 120px;
+    --nav-height: 49px;
+    --header-width-search-height: calc(var(--header-height) - var(--nav-height));
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-family: "Roboto",sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* keyframes */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    animation: fadeIn linear 0.2s;
+    /* display: none; */
+}
+/* .register{
+    display: none;
+} */
+/* .login{
+    display: none;
+} */
+.modal.open {
+    display: flex;
+}
+.register.open{
+    display: block;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal__body{
+    margin: auto;
+    /* width: 500px;
+    height: 500px; */
+    background-color: var(--white-color);
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    animation:headerNotifyGrowth linear 0.2s ;
+}
+.btn{
+    min-width: 142px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    opacity: 0.75;
+    color: var(--text-color);
+    /* background-color: var(--white-color); */
+}
+.btn:hover{
+    opacity: 1;
+}
+.btn.btn-disabled{
+    background-color: #c3c3c3;
+    color: #949494;
+    cursor: none;
+}
+.btn.btn-primary{
+    background-color: #4dc6f4;
+    color: var(--white-color);
+}
